@@ -1,0 +1,37 @@
+<div class="shipment-facts" *ngIf="invoiceData">
+  <h3>Shipment Facts</h3>
+  <div class="facts-grid">
+    <div class="fact-item">
+      <span class="fact-label">Invoice Number:</span>
+      <span class="fact-value">{{ invoiceData.Invoice_no }}</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Status:</span>
+      <span class="fact-value">{{ invoiceData.Invoice_status }}</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Invoice Date:</span>
+      <span class="fact-value">{{ invoiceData.Invoice_date }}</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Country:</span>
+      <span class="fact-value">{{ invoiceData.Country }}</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Total Cartons:</span>
+      <span class="fact-value">{{ invoiceData.Total_Ctn }}</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Total Weight:</span>
+      <span class="fact-value">{{ invoiceData.Total_Wgt }} kg</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Transit Type:</span>
+      <span class="fact-value">{{ invoiceData.transit_type_name }}</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">HAWB ID:</span>
+      <span class="fact-value">{{ invoiceData.hawb_id }}</span>
+    </div>
+  </div>
+</div>

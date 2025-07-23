@@ -1,0 +1,26 @@
+<div class="tracking-input-container float-animation">
+  <div class="tracking-card">
+    <h2>Track Your Shipment</h2>
+    <p class="subtitle">Enter your invoice number to get real-time updates</p>
+    
+    <form (submit)="onSubmit()" class="tracking-form">
+      <div class="form-group">
+        <label for="invoiceNumber">
+          <span class="icon">📦</span> Invoice Number
+        </label>
+        <input 
+          type="text" 
+          id="invoiceNumber" 
+          [(ngModel)]="invoiceNumber" 
+          name="invoiceNumber" 
+          placeholder="Enter the Invoice Number"
+          required
+        >
+      </div>
+      <button type="submit" class="track-button">
+        <span class="button-text">Track Now</span>
+        <span class="button-icon">🔍</span>
+      </button>
+    </form>
+  </div>
+</div>

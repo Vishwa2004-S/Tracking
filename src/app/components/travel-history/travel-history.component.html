@@ -1,0 +1,23 @@
+<div class="travel-history" *ngIf="cartonData && cartonData.length > 0">
+  <h3>✈️ Travel History</h3>
+  <div class="timeline">
+    <div 
+      class="timeline-item animate-fade-in" 
+      *ngFor="let item of cartonData; let i = index"
+      [style.animation-delay]="(i * 0.1) + 's'"
+    >
+      <div class="timeline-marker">
+        <span class="emoji">{{ getStatusEmoji(item.tracking_status) }}</span>
+      </div>
+      <div class="timeline-content">
+        <div class="timeline-date">{{ item.Transit_Date }} {{ item.ScanTime }}</div>
+        <div class="timeline-title">{{ item.operation_name }}</div>
+        <div class="timeline-description">
+          <p><strong>Status:</strong> {{ item.tracking_status }}</p>
+          <p><strong>Scanned By:</strong> {{ item.Scan_By }}</p>
+          <p *ngIf="item.remarks"><strong>Remarks:</strong> {{ item.remarks }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.package-details {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.package-details h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.package-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.package-label {
+  font-weight: 600;
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.package-value {
+  color: #34495e;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="delivery-status" *ngIf="invoiceData">
+  <h3>Delivery Status</h3>
+  <div class="status-container">
+    <div class="status-item">
+      <span class="status-label">Current Status:</span>
+      <span class="status-value">{{ invoiceData.Invoice_status }}</span>
+    </div>
+    <div class="status-item">
+      <span class="status-label">Delivery State:</span>
+      <span class="status-value">{{ invoiceData.Delivery_State }}</span>
+    </div>
+    <div class="status-item">
+      <span class="status-label">Receiver Name:</span>
+      <span class="status-value">{{ invoiceData.receiver_name }}</span>
+    </div>
+    <div class="status-item">
+      <span class="status-label">Receiver Contact:</span>
+      <span class="status-value">{{ invoiceData.recevier_no }}</span>
+    </div>
+    <div class="status-item full-width">
+      <span class="status-label">Delivery Address:</span>
+      <span class="status-value">{{ invoiceData.receiver_address }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="package-details" *ngIf="cartonData && cartonData.length > 0">
+  <h3>Package Details</h3>
+  <div class="package-grid">
+    <div class="package-item">
+      <span class="package-label">Carton Number:</span>
+      <span class="package-value">{{ cartonData[0].carton_no }}</span>
+    </div>
+    <div class="package-item">
+      <span class="package-label">Weight:</span>
+      <span class="package-value">{{ cartonData[0].carton_weight }} kg</span>
+    </div>
+    <div class="package-item">
+      <span class="package-label">Packing Condition:</span>
+      <span class="package-value">{{ cartonData[0].packing_condition }}</span>
+    </div>
+    <div class="package-item">
+      <span class="package-label">Origin:</span>
+      <span class="package-value">{{ cartonData[0].Origin }}</span>
+    </div>
+    <div class="package-item">
+      <span class="package-label">Destination:</span>
+      <span class="package-value">{{ cartonData[0].Destination }}</span>
+    </div>
+  </div>
+</div>

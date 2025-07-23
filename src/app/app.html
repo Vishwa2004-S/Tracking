@@ -1,0 +1,39 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>🚛 Maran Logistics Tracking</h1>
+    <p class="tagline">Track your shipments with ease</p>
+  </header>
+
+  <main class="app-main">
+    <div class="background-image"></div>
+    
+    <app-tracking-input (trackInvoice)="trackInvoice($event)"></app-tracking-input>
+
+    <div *ngIf="loading" class="loading-indicator">
+      <div class="spinner"></div>
+      <p>Loading tracking information...</p>
+    </div>
+
+    <div *ngIf="error" class="error-message">
+      {{ error }}
+    </div>
+
+    <div *ngIf="invoiceData" class="tracking-results">
+      <app-shipment-facts [invoiceData]="invoiceData"></app-shipment-facts>
+      <app-delivery-status [invoiceData]="invoiceData"></app-delivery-status>
+      <app-package-details [cartonData]="cartonData"></app-package-details>
+      <app-travel-history [cartonData]="cartonData"></app-travel-history>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Maran Logistics. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-icon">📱</a>
+        <a href="#" class="social-icon">💻</a>
+        <a href="#" class="social-icon">📧</a>
+      </div>
+    </div>
+  </footer>
+</div>
