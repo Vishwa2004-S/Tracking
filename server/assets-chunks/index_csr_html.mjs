@@ -1,0 +1,14 @@
+export default `<!doctype html>
+<html lang="en" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>MaranLogistics</title>
+  <base href="https://Vishwa2004-S.github.io/Tracking/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>:root{--primary-blue:#3498db;--primary-violet:#9b59b6;--gradient-bg:linear-gradient(135deg, var(--primary-blue), var(--primary-violet));--card-bg:rgba(255, 255, 255, .95);--text-color:#2c3e50;--text-light:#ecf0f1;--shadow:0 10px 30px rgba(0, 0, 0, .1)}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;line-height:1.6;color:var(--text-color);background:var(--gradient-bg);background-attachment:fixed;min-height:100vh;display:flex;flex-direction:column}</style><link rel="stylesheet" href="styles-AT5HTVJG.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-AT5HTVJG.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="main-QF34EBQZ.js" type="module"></script></body>
+</html>
+`;
